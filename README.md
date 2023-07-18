@@ -12,7 +12,7 @@ Crispy-octo-meme: https://github.com/coding-boot-camp/crispy-octo-meme
 
 The link opens to the current day, organized into hourly blocks from 9 a.m. to 5 p.m.
 
-Each time block is color-coded to represent a certain time.
+Each time block is color-coded to represent a certain time:
 
 - **GREY** for the past
 - **RED** for the present
