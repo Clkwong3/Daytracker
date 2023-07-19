@@ -3,7 +3,17 @@
 // dayjs.locale(myArea);
 
 $(function () {
-  // Display the Date and Time in the Header
+  // Save User Input in Local Storage
+  function userEvent() {
+    $(".saveBtn").on("click", function () {
+      let text = $(this).siblings(".description").val();
+      let time = $(this).parent().attr("id");
+
+      localStorage.setItem(text, time);
+    });
+  }
+
+  // Display the Current Date and Time in the Header
   function UpToDate() {
     let dateEl = $("#date");
     let timeEl = $("#time");
@@ -14,6 +24,6 @@ $(function () {
     dateEl.text(currentDate);
     timeEl.text(currentTime);
   }
-
+  // Keep Time Current
   setInterval(UpToDate, 1000);
 });
