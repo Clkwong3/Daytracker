@@ -32,10 +32,6 @@ h1 {
 }
 
 /* ------- Time Box ------- */
-.time-block {
-  border-radius: 5px;
-}
-
 .hour {
   background-color: #cd8b62;
   color: #000000;
@@ -72,7 +68,8 @@ h1 {
 /* ------- Save Button ------- */
 .saveBtn {
   border: 1px solid black;
-  border-radius: 10px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
   background-color: #06aed5;
   color: white;
 }

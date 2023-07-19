@@ -18,7 +18,7 @@ $(function () {
 
   // Change the Color of the Time Blocks
   function blockColor() {
-    $(".time-block").each(function () {
+    $(".text-block").each(function () {
       // Current Hour
       let hrNow = dayjs().format("H");
       let hrBlock = parseInt(this.id);
