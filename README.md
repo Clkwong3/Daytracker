@@ -1,10 +1,10 @@
 # Daytracker
 
-Create a calendar app that allows users to record events for each hour of the work day.
+Use code from [Day.js](https://day.js.org/) and [jQueryUI](https://api.jqueryui.com/) to help keep track of your busy day.
 
 ## Description
 
-Use code from [Day.js](https://day.js.org/) and [jQueryUI](https://api.jqueryui.com/) to help keep track of your busy day.
+Create a calendar app that allows users to record events for each hour of the work day.
 
 ## Source of starter code
 
@@ -31,3 +31,5 @@ To add an event, click the time block and then the save icon.
 ![Full Page Image](./Assets/images/Testing-Shot.png)
 
 ## Link to install
+
+No installation required. Click on the link below:
