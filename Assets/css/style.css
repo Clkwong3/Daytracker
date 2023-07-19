@@ -1,12 +1,13 @@
 /* ------- Header ------- */
 body {
   font-family: "Open Sans", sans-serif;
-  font-size: 15px;
+  font-size: 20px;
   background-color: #eed7a1;
 }
 
-p {
-  font-size: 20px;
+h1 {
+  font-size: 25px;
+  line-height: 1.5;
 }
 
 /* ------- Below the Line ------- */
@@ -80,6 +81,12 @@ p {
   font-size: 30px;
   color: #000000;
   transition: all 0.3s ease-in-out;
+}
+
+/* ------- footer ------- */
+.footer {
+  text-align: center;
+  font-size: 10px;
 }
 
 /* ------- Resize ------- */

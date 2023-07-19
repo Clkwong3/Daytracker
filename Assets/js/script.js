@@ -16,7 +16,7 @@ $(function () {
       $("#popup").show();
       setTimeout(function () {
         $("#popup").hide();
-      }, 5000);
+      }, 4000);
     });
   }
 
