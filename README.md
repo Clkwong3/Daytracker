@@ -22,10 +22,10 @@ To add an event, click the time block and then the save icon.
 
 ## Demo Gif
 
-![Full Page Image](./assets/demo/05-third-party-apis-homework-demo.gif)
+![Image](/assets/demo/05-third-party-apis-homework-demo.gif)
 
 ## Preview
 
-![Full Page Image](./assets/images/Current-Screenshot.png)
+![Image](/assets/images/Current-Screenshot.png)
 
 ## Link to install
