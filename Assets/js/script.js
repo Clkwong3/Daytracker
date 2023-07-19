@@ -14,8 +14,6 @@ $(function () {
     });
   }
 
-  //
-
   // Change the Color of the Time Blocks
   function blockColor() {
     $(".time-block").each(function () {
@@ -38,6 +36,15 @@ $(function () {
       }
     });
   }
+
+  // Retrieve User Input
+  $(".time-block").each(function () {
+    // Same as function userEvent but switch
+    let time = $(this).attr("id");
+    let text = localStorage.getItem(time);
+
+    $(this).children(".description").val(text);
+  });
 
   // Display the Current Date and Time in the Header
   function UpToDate() {

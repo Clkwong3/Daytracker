@@ -1,9 +1,14 @@
+/* ------- Header ------- */
 body {
   font-family: "Open Sans", sans-serif;
-  font-size: 16px;
-  line-height: 1;
+  font-size: 15px;
 }
 
+p {
+  font-size: 20px;
+}
+
+/* ------- Below the Line ------- */
 .container {
   text-align: center;
   background-color: transparent;
@@ -11,7 +16,7 @@ body {
   border-radius: 0px;
 }
 
-/* Text Box */
+/* ------- Text Box ------- */
 .textarea {
   background: transparent;
   border: none;
@@ -21,18 +26,10 @@ body {
   padding: 4px 10px;
 }
 
-.description {
-  white-space: pre-wrap;
-}
-
+/* ------- Time Box ------- */
 .time-block {
   text-align: center;
   border-radius: 15px;
-}
-
-.row {
-  white-space: pre-wrap;
-  height: 80px;
 }
 
 .hour {
@@ -42,21 +39,33 @@ body {
   padding-top: 15px;
 }
 
+/* ------- User Input Box ------- */
+.row {
+  white-space: pre-wrap;
+  height: 80px;
+}
+
+.description {
+  white-space: pre-wrap;
+}
+
+/* ------- Hour Blocks Color ------- */
 .past {
   background-color: #d3d3d3;
-  color: white;
+  color: black;
 }
 
 .present {
   background-color: #ff6961;
-  color: white;
+  color: black;
 }
 
 .future {
   background-color: #77dd77;
-  color: white;
+  color: black;
 }
 
+/* ------- Save Button ------- */
 .saveBtn {
   border: 1px solid black;
   border-radius: 10px;
