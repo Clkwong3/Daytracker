@@ -6,10 +6,11 @@ $(function () {
   // Save User Input in Local Storage
   function userEvent() {
     $(".saveBtn").on("click", function () {
-      let text = $(this).siblings(".description").val();
-      let time = $(this).parent().attr("id");
+      // Text Input Value
+      let key = $(this).parent().attr("id");
+      let value = $(this).siblings(".description").val();
 
-      localStorage.setItem(text, time);
+      localStorage.setItem(key, value);
     });
   }
 
@@ -24,6 +25,9 @@ $(function () {
     dateEl.text(currentDate);
     timeEl.text(currentTime);
   }
+
+  userEvent();
+
   // Keep Time Current
   setInterval(UpToDate, 1000);
 });
