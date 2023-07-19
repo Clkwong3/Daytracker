@@ -11,6 +11,12 @@ $(function () {
       let text = $(this).siblings(".description").val();
       // time -> key, text -> value in DEV Tools
       localStorage.setItem(time, text);
+
+      // Acknowledges the save button
+      $("#popup").show();
+      setTimeout(function () {
+        $("#popup").hide();
+      }, 5000);
     });
   }
 
