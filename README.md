@@ -28,7 +28,7 @@ To add an event, click the time block and then the save icon.
 
 ## Preview
 
-![Full Page Image](./Assets/images/Testing-Shot.png)
+![Full Page Image](./Assets/images/Screenshot-ver2.png)
 
 ## Link to install
 
