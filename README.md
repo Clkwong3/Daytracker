@@ -32,5 +32,5 @@ To add an event, click the time block and then the save icon.
 
 ## Link to install
 
-No installation required. Click on the link below:
+No installation required. Click on the link here:
 https://clkwong3.github.io/Daytracker/
