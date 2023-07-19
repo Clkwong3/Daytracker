@@ -7,10 +7,35 @@ $(function () {
   function userEvent() {
     $(".saveBtn").on("click", function () {
       // Text Input Value
-      let key = $(this).parent().attr("id");
-      let value = $(this).siblings(".description").val();
+      let time = $(this).parent().attr("id");
+      let text = $(this).siblings(".description").val();
+      // time -> key, text -> value in DEV Tools
+      localStorage.setItem(time, text);
+    });
+  }
 
-      localStorage.setItem(key, value);
+  //
+
+  // Change the Color of the Time Blocks
+  function blockColor() {
+    $(".time-block").each(function () {
+      // Current Hour
+      let hrNow = dayjs().format("H");
+      let hrBlock = parseInt(this.id);
+
+      if (hrBlock < hrNow) {
+        $(this).removeClass("future");
+        $(this).removeClass("present");
+        $(this).addClass("past");
+      } else if (hrBlock === hrNow) {
+        $(this).removeClass("past");
+        $(this).removeClass("future");
+        $(this).addClass("present");
+      } else {
+        $(this).removeClass("present");
+        $(this).removeClass("past");
+        $(this).addClass("future");
+      }
     });
   }
 
@@ -27,7 +52,7 @@ $(function () {
   }
 
   userEvent();
-
+  blockColor();
   // Keep Time Current
   setInterval(UpToDate, 1000);
 });
