@@ -4,7 +4,7 @@ Create a calendar app that allows users to record events for each hour of the wo
 
 ## Description
 
-Use code from [Day.js] (https://day.js.org/) and [jQueryUI] (https://api.jqueryui.com/) to help keep track of your busy day.
+Use code from [Day.js](https://day.js.org/) and [jQueryUI](https://api.jqueryui.com/) to help keep track of your busy day.
 
 ## Source of starter code
 
