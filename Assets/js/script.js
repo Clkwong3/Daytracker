@@ -1,6 +1,6 @@
 // Show the current location's date and time.
-var myArea = {};
-dayjs.locale(myArea);
+// var myArea = {};
+// dayjs.locale(myArea);
 
 $(function () {
   // Display the Date and Time in the Header
