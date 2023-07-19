@@ -1,7 +1,3 @@
-// Show the current location's date and time.
-// var myArea = {};
-// dayjs.locale(myArea);
-
 $(function () {
   // Save User Input in Local Storage
   function userEvent() {
