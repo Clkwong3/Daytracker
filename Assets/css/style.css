@@ -79,14 +79,15 @@ p {
   transition: all 0.3s ease-in-out;
 }
 
-.event-group {
-  padding: 2px 0 0 2px;
+/* ------- Resize ------- */
+@media screen and (max-width: 992px) {
+  .container-fluid {
+    width: 50%;
+  }
 }
 
-.events {
-  margin: 0;
-  height: 75px;
-  color: #000000;
-  font-size: 14px;
-  line-height: 22px;
+@media screen and (max-width: 768px) {
+  .container-fluid {
+    width: 100%;
+  }
 }
