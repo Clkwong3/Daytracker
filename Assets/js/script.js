@@ -58,8 +58,10 @@ $(function () {
     timeEl.text(currentTime);
   }
 
+  // Activate Functions
   userEvent();
   blockColor();
+
   // Keep Time Current
   setInterval(UpToDate, 1000);
 });
