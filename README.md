@@ -30,7 +30,7 @@ Each time block is color-coded to represent a certain time:
 
 No installation required. Click on the link here: https://clkwong3.github.io/Daytracker/
 
-## Improvements
+## Future Improvements
 
 - Time blocks could be done in JS
 - Toggle between themes
