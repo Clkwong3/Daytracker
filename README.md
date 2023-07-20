@@ -2,10 +2,6 @@
 
 Use code from [Bootstrap](https://getbootstrap.com/docs/5.3/getting-started/introduction/), [Day.js](https://day.js.org/), and [jQueryUI](https://api.jqueryui.com/) to help keep track of your busy day.
 
-## Description
-
-Create a calendar app that allows users to record events for each hour of the work day.
-
 ## Source of starter code
 
 Crispy-octo-meme: https://github.com/coding-boot-camp/crispy-octo-meme
