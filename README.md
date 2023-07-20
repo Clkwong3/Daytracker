@@ -1,6 +1,6 @@
 # Daytracker
 
-Use code from [Day.js](https://day.js.org/) and [jQueryUI](https://api.jqueryui.com/) to help keep track of your busy day.
+Use code from [Bootstrap](https://getbootstrap.com/docs/5.3/getting-started/introduction/), [Day.js](https://day.js.org/), and [jQueryUI](https://api.jqueryui.com/) to help keep track of your busy day.
 
 ## Description
 
@@ -12,15 +12,15 @@ Crispy-octo-meme: https://github.com/coding-boot-camp/crispy-octo-meme
 
 ## How it works
 
-The link opens to the current day, organized into hourly blocks from 9 a.m. to 5 p.m.
+Enter your tasks into a block before hitting the save disk to update.
+If you like to remove a task, delete then hit the disk.
 
+The day is organized into hourly blocks from 9 a.m. to 5 p.m.
 Each time block is color-coded to represent a certain time:
 
-- **GREY** for the past
-- **RED** for the present
-- **GREEN** for the future
-
-To add an event, click the time block and then the save icon.
+- **GREY**: The hour is gone
+- **RED**: The current hour
+- **GREEN** The hour is coming up
 
 ## Demo Gif
 
@@ -32,5 +32,4 @@ To add an event, click the time block and then the save icon.
 
 ## Link to install
 
-No installation required. Click on the link here:
-https://clkwong3.github.io/Daytracker/
+No installation required. Click on the link here: https://clkwong3.github.io/Daytracker/
