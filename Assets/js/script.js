@@ -1,7 +1,4 @@
 $(function () {
-  // 24 Hr Format
-  var nowHr = dayjs().format("H");
-
   // Save User Input in Local Storage
   function userEvent() {
     $(".saveBtn").on("click", function () {
@@ -21,31 +18,37 @@ $(function () {
   }
   userEvent();
 
-  // Assign Class to Time Block
-  function timeClass() {
-    const rows = document.getElementsByClassName("row");
-    let nowHr = dayjs().format("H");
-    console.log(nowHr);
+  // Change Time Block Color
+  function colorChange() {
+    $(".time-block").each(function () {
+      let currentHour = dayjs().format("H");
+      let blockHour = parseInt(this.id);
 
-    $(".text-block").each(function () {
-      if ("#7:00" < nowHr) {
-        $(this).removeClass("future present").addClass("past");
-      } else if ("#7:00" === nowHr) {
-        $(this).removeClass("past future").addClass("present");
+      if (blockHour === currentHour) {
+        $("#" + this.id)
+          .children(".description")
+          .removeClass("past future")
+          .addClass("present");
+      } else if (blockHour < currentHour) {
+        $("#" + this.id)
+          .children(".description")
+          .removeClass("future present")
+          .addClass("past");
       } else {
-        $(this).removeClass("past present").addClass("future");
+        $("#" + this.id)
+          .children(".description")
+          .removeClass("past present")
+          .addClass("future");
       }
     });
   }
-  timeClass();
+  colorChange();
 
-  // Retrieve User Input
+  // Display Event in Time Block
   $(".time-block").each(function () {
-    // Same as function userEvent but switch
-    let time = $(this).attr("id");
-    let text = localStorage.getItem(time);
-
-    $(this).children(".description").val(text);
+    let key = $(this).attr("id");
+    let value = localStorage.getItem(key);
+    $(this).children(".description").val(value);
   });
 
   // Display the Current Date and Time in the Header
