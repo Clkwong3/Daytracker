@@ -10,22 +10,34 @@ $(function () {
       let text = $(this).siblings(".description").val();
       // time -> key, text -> value in DEV Tools
       localStorage.setItem(time, text);
+
+      // Acknowledges the save button
+      $("#popup").show();
+
+      setTimeout(function () {
+        $("#popup").hide();
+      }, 5000);
     });
   }
   userEvent();
 
-  // Change the Color of the Time Blocks
-  function colorUpdate() {
+  // Assign Color to Time Block
+  function timeColor() {
     $(".text-block").each(function () {
       let blockHr = parseInt(this.id);
 
-      $(this).toggleClass("past", blockHr < nowHr);
-      $(this).toggleClass("present", blockHr === nowHr);
-      $(this).toggleClass("future", blockHr > nowHr);
+      $(this).toggleClass("past", blockHr < nowHr); // grey
+      $(this).toggleClass("present", blockHr === nowHr); // red
+      $(this).toggleClass("future", blockHr > nowHr); // green
     });
+  }
+  timeColor();
 
+  // Assign Class to Time Block
+  function timeClass() {
     $(".text-block").each(function () {
       let blockHr = parseInt(this.id);
+
       if (blockHr == nowHr) {
         $(this).removeClass("past future").addClass("present");
       } else if (blockHr < nowHr) {
@@ -35,7 +47,7 @@ $(function () {
       }
     });
   }
-  colorUpdate();
+  timeClass();
 
   // Retrieve User Input
   $(".time-block").each(function () {
