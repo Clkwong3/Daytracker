@@ -1,8 +1,9 @@
 /* ------- Header ------- */
 body {
   font-family: "Open Sans", sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   background-color: #eed7a1;
+  line-height: 1;
 }
 
 h1 {
@@ -14,55 +15,64 @@ h1 {
   text-align: center;
 }
 
-/* ------- Below the Line ------- */
+/* ------- Body ------- */
 .container {
   text-align: center;
   background-color: transparent;
   color: black;
   border-radius: 0px;
+  border-bottom: 10px solid black;
 }
 
 /* ------- Text Box ------- */
 .textarea {
   background: transparent;
   border: none;
+  resize: none;
   color: #000000;
   border-left: 1px solid black;
-  padding: 4px 10px;
+  padding: 10px !important;
+  font-weight: bold;
 }
 
 /* ------- Time Box ------- */
+.time-block {
+  text-align: center;
+  border-radius: 15px;
+}
+
 .hour {
+  padding-top: 10px;
+  text-align: center;
   background-color: #cd8b62;
   color: #000000;
   border-top: 1px dashed #000000;
-  padding-top: 10px;
-  text-align: center;
 }
 
 /* ------- User Input Box ------- */
 .row {
   white-space: pre-wrap;
   height: 80px;
+  border-top: 1px solid #eed7a1;
 }
 
 .description {
   white-space: pre-wrap;
 }
 
-/* ------- Hour Blocks Color ------- */
+/* ------- Hour Block Color ------- */
 .past {
-  background-color: #c4c2c2de;
+  background-color: #d3d3d3;
   color: black;
 }
 
 .present {
-  background-color: #e6271df2;
+  background-color: #ff6961;
   color: black;
 }
 
 .future {
-  background-color: #0ab20add;
+  background-color: #77dd77;
   color: black;
 }
 
@@ -75,21 +85,15 @@ h1 {
   color: white;
 }
 
-.saveBtn i.fa-save:hover {
-  font-size: 30px;
-  color: #000000;
+.saveBtn:hover {
+  font-size: 20px;
   transition: all 0.3s ease-in-out;
 }
 
-/* ------- Resize ------- */
-@media screen and (max-width: 992px) {
-  .container-fluid {
-    width: 50%;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .container-fluid {
-    width: 100%;
-  }
+/* ------- Footer ------- */
+footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 10px;
 }
