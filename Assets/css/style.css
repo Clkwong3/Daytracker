@@ -36,7 +36,8 @@ h1 {
   background-color: #cd8b62;
   color: #000000;
   border-top: 1px dashed #000000;
-  padding-top: 15px;
+  padding-top: 10px;
+  text-align: center;
 }
 
 /* ------- User Input Box ------- */
@@ -78,12 +79,6 @@ h1 {
   font-size: 30px;
   color: #000000;
   transition: all 0.3s ease-in-out;
-}
-
-/* ------- footer ------- */
-.footer {
-  text-align: center;
-  font-size: 10px;
 }
 
 /* ------- Resize ------- */

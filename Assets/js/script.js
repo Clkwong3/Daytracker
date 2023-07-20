@@ -1,4 +1,7 @@
 $(function () {
+  // 24 Hr Format
+  var nowHr = dayjs().format("H");
+
   // Save User Input in Local Storage
   function userEvent() {
     $(".saveBtn").on("click", function () {
@@ -7,37 +10,32 @@ $(function () {
       let text = $(this).siblings(".description").val();
       // time -> key, text -> value in DEV Tools
       localStorage.setItem(time, text);
-
-      // Acknowledges the save button
-      $("#popup").show();
-      setTimeout(function () {
-        $("#popup").hide();
-      }, 4000);
     });
   }
+  userEvent();
 
   // Change the Color of the Time Blocks
-  function blockColor() {
+  function colorUpdate() {
     $(".text-block").each(function () {
-      // Current Hour
-      let hrNow = dayjs().format("H");
-      let hrBlock = parseInt(this.id);
+      let blockHr = parseInt(this.id);
 
-      if (hrBlock < hrNow) {
-        $(this).removeClass("future");
-        $(this).removeClass("present");
-        $(this).addClass("past");
-      } else if (hrBlock === hrNow) {
-        $(this).removeClass("past");
-        $(this).removeClass("future");
-        $(this).addClass("present");
+      $(this).toggleClass("past", blockHr < nowHr);
+      $(this).toggleClass("present", blockHr === nowHr);
+      $(this).toggleClass("future", blockHr > nowHr);
+    });
+
+    $(".text-block").each(function () {
+      let blockHr = parseInt(this.id);
+      if (blockHr == nowHr) {
+        $(this).removeClass("past future").addClass("present");
+      } else if (blockHr < nowHr) {
+        $(this).removeClass("future present").addClass("past");
       } else {
-        $(this).removeClass("present");
-        $(this).removeClass("past");
-        $(this).addClass("future");
+        $(this).removeClass("past present").addClass("future");
       }
     });
   }
+  colorUpdate();
 
   // Retrieve User Input
   $(".time-block").each(function () {
@@ -59,11 +57,6 @@ $(function () {
     dateEl.text(currentDate);
     timeEl.text(currentTime);
   }
-
-  // Activate Functions
-  userEvent();
-  blockColor();
-
   // Keep Time Current
   setInterval(UpToDate, 1000);
 });
