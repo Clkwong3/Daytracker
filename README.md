@@ -28,7 +28,7 @@ Each time block is color-coded to represent a certain time:
 
 ## Preview
 
-![Full Page Image](./Assets/images/_Users_ECY_bootcamp_Challenges_Daytracker_index.html.png)
+![Full Page Image](./Assets/images/clkwong3.github.io_Daytracker_.png)
 
 ## Link to install
 
