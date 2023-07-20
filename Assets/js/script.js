@@ -21,27 +21,17 @@ $(function () {
   }
   userEvent();
 
-  // Assign Color to Time Block
-  function timeColor() {
-    $(".text-block").each(function () {
-      let blockHr = parseInt(this.id);
-
-      $(this).toggleClass("past", blockHr < nowHr); // grey
-      $(this).toggleClass("present", blockHr === nowHr); // red
-      $(this).toggleClass("future", blockHr > nowHr); // green
-    });
-  }
-  timeColor();
-
   // Assign Class to Time Block
   function timeClass() {
-    $(".text-block").each(function () {
-      let blockHr = parseInt(this.id);
+    const rows = document.getElementsByClassName("row");
+    let nowHr = dayjs().format("H");
+    console.log(nowHr);
 
-      if (blockHr == nowHr) {
-        $(this).removeClass("past future").addClass("present");
-      } else if (blockHr < nowHr) {
+    $(".text-block").each(function () {
+      if ("#7:00" < nowHr) {
         $(this).removeClass("future present").addClass("past");
+      } else if ("#7:00" === nowHr) {
+        $(this).removeClass("past future").addClass("present");
       } else {
         $(this).removeClass("past present").addClass("future");
       }

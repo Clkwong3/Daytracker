@@ -10,16 +10,16 @@ h1 {
   line-height: 1.5;
 }
 
+#popup {
+  text-align: center;
+}
+
 /* ------- Below the Line ------- */
 .container {
   text-align: center;
   background-color: transparent;
   color: black;
   border-radius: 0px;
-}
-
-#popup {
-  text-align: center;
 }
 
 /* ------- Text Box ------- */
@@ -52,17 +52,17 @@ h1 {
 
 /* ------- Hour Blocks Color ------- */
 .past {
-  background-color: #d3d3d3;
+  background-color: #c4c2c2de;
   color: black;
 }
 
 .present {
-  background-color: #ff6961;
+  background-color: #e6271df2;
   color: black;
 }
 
 .future {
-  background-color: #77dd77;
+  background-color: #0ab20add;
   color: black;
 }
 

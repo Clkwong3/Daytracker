@@ -24,22 +24,21 @@
     />
     <link rel="stylesheet" href="./Assets/css/style.css" />
     
-    <title>Work Day Scheduler</title>
+    <title>Day Tracker</title>
   </head>
   
 
   <body>
     <header class="p-5 mb-4 border-5 border-bottom border-dark text-center">
-      <h1 class="display-3">Work Day Scheduler</h1>
+      <h1 class="display-3">Watch Your Hours</h1>
       <p class="lead">Let's keep track of your work day</p>
       <p id="currentDay" class="lead"></p>
       <!-- Current Date and Time -->
       <h1><span id="date"></span></br><span id="time"></span></h1>
+      <div id="popup" style="display:none">Appointment Added Successfully ✔</div> 
     </header>
 
     <div class="container-fluid px-5">
-      <div id="popup" style="display:none">Appointment Added Successfully ✔</div> 
-      
         <!-- TIMEBLOCK: 7 AM-->
         <div id="7:00" class="row time-block">
          <div class="col-2 col-md-1 hour text-center py-4">07:00 AM</div>
