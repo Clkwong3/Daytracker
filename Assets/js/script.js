@@ -1,3 +1,4 @@
+// Inside jQuery to Ensure Code Executes After HTML is Loaded
 $(function () {
   // Save User Input in Local Storage
   function userEvent() {
