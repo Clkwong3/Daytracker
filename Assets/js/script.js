@@ -20,8 +20,9 @@ $(function () {
 
   // Change Time Block Color
   function colorChange() {
+    let currentHour = parseInt(dayjs().format("H")); // Get the current hour as an integer
+
     $(".time-block").each(function () {
-      let currentHour = dayjs().format("H");
       let blockHour = parseInt(this.id);
 
       if (blockHour === currentHour) {
