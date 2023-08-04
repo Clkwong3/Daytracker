@@ -32,7 +32,7 @@ $(function () {
       } else if (blockHour < currentHour) {
         $("#" + this.id)
           .children(".description")
-          .removeClass("future present")
+          .removeClass("present future")
           .addClass("past");
       } else {
         $("#" + this.id)
