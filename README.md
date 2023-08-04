@@ -32,5 +32,4 @@ No installation required. Click on the link here: https://clkwong3.github.io/Day
 
 ## Future Improvements
 
-- Time blocks could be done in JS
-- Toggle between themes
+- Time blocks could be done in JS but need to figure out how to style them

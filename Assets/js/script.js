@@ -66,4 +66,16 @@ $(function () {
   }
   // Keep Time Current
   setInterval(UpToDate, 1000);
+
+  // Dark Mode
+  const darkModeToggle = document.getElementById("darkModeToggle");
+  const bodyEl = document.body;
+
+  darkModeToggle.addEventListener("change", function () {
+    if (this.checked) {
+      bodyEl.classList.add("dark-mode");
+    } else {
+      bodyEl.classList.remove("dark-mode");
+    }
+  });
 });
